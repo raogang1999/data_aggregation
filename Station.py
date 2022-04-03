@@ -7,18 +7,15 @@
 ## 具体过程为
 ## 1. 初始化参数，包括 通信公钥，自己的私钥。监听，等待接入
 ## 2.
-import json
-import time
-from copy import copy
-import socket
 from typing import List
 
-from Server import Server
-from GroupInit import GroupInit
-from config import *
-from Message import Message
-from charm.toolbox.pairinggroup import PairingGroup, ZR, G1, G2, GT, pair, H
+from charm.toolbox.pairinggroup import pair
+
 from Elgamal import Elgamal
+from GroupInit import GroupInit
+from Message import Message
+from Server import Server
+from config import *
 
 
 class Station:

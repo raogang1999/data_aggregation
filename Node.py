@@ -1,26 +1,16 @@
-import json
-import socket
 import sys
-from copy import copy
-
-import gmpy2
-from charm.toolbox.pairinggroup import PairingGroup, ZR, G1, G2, GT, pair, H
-from charm.core.engine.util import objectToBytes
-from charm.core.engine.util import pickleObject, unpickleObject
-from charm.core.math.pairing import pc_element
 import time
-from Encoder import Encoder, Decoder
-from Server import Server
+
+from charm.toolbox.pairinggroup import ZR, pair
+
+from Elgamal import Elgamal
 from GroupInit import GroupInit
 from Message import Message
-from Elgamal import Elgamal
+from Server import Server
 from config import *
-import pickle
-import json
+
 
 # 记得导入所需的模块
-import datetime
-import decimal
 
 
 class Node:

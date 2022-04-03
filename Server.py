@@ -3,7 +3,7 @@ import socket
 import threading
 from copy import copy
 
-from Encoder import Decoder, Encoder
+import Encoder
 
 
 class Server:
@@ -17,7 +17,7 @@ class Server:
         a = self.ip
         temp_msg = copy(msg)
         client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        data = json.dumps(temp_msg.get_msg(), cls=Encoder)
+        data = json.dumps(temp_msg.get_msg(), cls=Encoder.Encoder)
         client.sendto(data.encode('utf-8'), (msg.get_ip(), msg.get_port()))
 
     def __init__(self, ip, port, greet, handler):

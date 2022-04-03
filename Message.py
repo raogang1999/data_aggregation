@@ -1,8 +1,4 @@
 # 定义传输消息的格式
-import json
-import pickle
-import socket
-from enum import Enum
 
 
 class Message:

@@ -1,10 +1,5 @@
-from charm.toolbox.pairinggroup import PairingGroup, ZR, G1, G2, GT, pair, H
 from charm.core.engine.util import objectToBytes
-
-from Server import Server
-from config import *
-
-from Message import Message
+from charm.toolbox.pairinggroup import PairingGroup, G1, G2
 
 
 class GroupInit:

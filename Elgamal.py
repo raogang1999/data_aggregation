@@ -1,7 +1,6 @@
 import random
 
 import gmpy2
-from pyunit_prime import get_large_prime_length, get_large_prime_bit_size
 
 
 class Elgamal:
