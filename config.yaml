@@ -1,0 +1,41 @@
+GroupInit:
+  ip: "127.0.0.1"
+  port: 9999
+station:
+  ip: '127.0.0.1'
+  port: 10001
+clusters:
+  - cluster:
+      id: 'c1'
+      ip: '127.0.0.1'
+      port: 10004
+  - cluster:
+      id: 'c2'
+      ip: '127.0.0.1'
+      port: 10002
+  - cluster:
+      id: 'c3'
+      ip: '127.0.0.1'
+      port: 10003
+nodes:
+  - node:
+      id: 'n1'
+      ip: '127.0.0.1'
+      port: 20008
+  - node:
+      id: 'n2'
+      ip: '127.0.0.1'
+      port: 20001
+  - node:
+      id: 'n3'
+      ip: '127.0.0.1'
+      port: 20004
+  - node:
+      id: 'n4'
+      ip: '127.0.0.1'
+      port: 20005
+  - node:
+      id: 'n5'
+      ip: '127.0.0.1'
+      port: 20006
+
