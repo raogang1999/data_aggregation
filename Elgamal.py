@@ -27,7 +27,7 @@ class Elgamal:
 
     def decrypt(self, c1, c2, sk):
         c1_inv = gmpy2.invert(gmpy2.powmod(c1, sk, self.p), self.p)
-        return c2 * c1_inv % self.p
+        return int(c2 * c1_inv % self.p)
 
     def mul(self, c1, c2, c3, c4):
         return int(c1 * c3 % self.p), int(c2 * c4 % self.p)

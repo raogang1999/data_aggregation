@@ -21,21 +21,40 @@ nodes:
   - node:
       id: 'n1'
       ip: '127.0.0.1'
-      port: 20008
+      port: 20001
   - node:
       id: 'n2'
       ip: '127.0.0.1'
-      port: 20001
+      port: 20002
   - node:
       id: 'n3'
       ip: '127.0.0.1'
-      port: 20004
+      port: 20003
   - node:
       id: 'n4'
       ip: '127.0.0.1'
-      port: 20005
+      port: 20004
   - node:
       id: 'n5'
       ip: '127.0.0.1'
+      port: 20005
+  - node:
+      id: 'n6'
+      ip: '127.0.0.1'
       port: 20006
-
+  - node:
+      id: 'n7'
+      ip: '127.0.0.1'
+      port: 20007
+  - node:
+      id: 'n8'
+      ip: '127.0.0.1'
+      port: 20008
+  - node:
+      id: 'n9'
+      ip: '127.0.0.1'
+      port: 20009
+  - node:
+      id: 'n10'
+      ip: '127.0.0.1'
+      port: 20010

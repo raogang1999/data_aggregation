@@ -14,7 +14,6 @@ class Server:
             handler(msg)
 
     def send_msg(self, msg):
-        a = self.ip
         temp_msg = copy(msg)
         client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         data = json.dumps(temp_msg.get_msg(), cls=Encoder.Encoder)
